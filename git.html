@@ -38,6 +38,29 @@
         //git reset HEAD .
         //12.跳过暂存区直接提交
         //git commit -a -m "描述信息"
+        //13.从git仓库和工作区同时移除文件
+        //git rm -f index.js
+        //14.从git仓库中移除，保留工作区的文件
+        //git rm --cached index.js
+        //15.忽略文件
+        //*.a 忽略所有.a文件，注释文件
+        //!lib.a跟踪所有的lib.a文件，即使前面忽略了
+        // /TODO 只忽略当前目录下的TODO文件
+        // build/忽略任何目录下名为build的文件夹
+        // doc/*.txt 忽略 doc/notes.txt,但不忽略doc/server/srch.txt
+        // doc/**/*.pdf 忽略 doc/目录及其所有子目录下的.pdf文件
+        // index.css 忽略某个文件
+        //16.查看提交历史
+        //git log查看所有提交记录
+        //git log -2产看最近2条提交记录
+        //git log -2 --pretty=oneline信息展示到一行
+        //git log -2 --pretty=format:"%h | %an | %ar |%s"自定义展示信息格式
+        //17.回退到指定的版本
+        //首先执行git log --pretty=oneline得到版本号
+        //再使用git reset --hard 加上上一步得到的版本号从而回退到指定的版本
+        //如果此时又要回退到另外一个版本，则要执行git reflog --pretty=online得到所有版本号
+          //然后再执行 git reset --hard加上版本号
+          
     </script>
 </body>
 </html>
